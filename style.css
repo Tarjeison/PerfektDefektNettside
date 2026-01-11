@@ -117,9 +117,14 @@ body {
     stroke: none;
 }
 
-/* Section 2: Intro */
-.tour-section {
+/* Section 2: About */
+.about-section {
     background: transparent;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem 0;
+    height: auto;
+    min-height: 100vh;
 }
 
 .intro-content {
@@ -128,7 +133,7 @@ body {
     gap: 4rem;
     max-width: 1400px;
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 3rem auto;
     align-items: center;
     position: relative;
     z-index: 3;
@@ -244,14 +249,6 @@ body {
     margin-left: 4px;
 }
 
-/* Section 2.5: Contact Buttons */
-.contact-buttons-section {
-    background: transparent;
-    min-height: auto;
-    height: auto;
-    padding: 3rem 0;
-}
-
 .contact-buttons-content {
     display: flex;
     gap: 2rem;
@@ -260,6 +257,9 @@ body {
     position: relative;
     z-index: 3;
     flex-wrap: wrap;
+    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .contact-button {
@@ -565,6 +565,7 @@ body {
     .section-content h2 {
         font-size: 1.3rem;
     }
+
 
     .contact-buttons-content {
         flex-direction: column;
