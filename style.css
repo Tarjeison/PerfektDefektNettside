@@ -52,13 +52,6 @@ body {
 /* Section Base Styles */
 .section {
     width: 100vw;
-    min-height: 100vh;
-    height: 100vh;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
     flex-shrink: 0;
     background: transparent;
@@ -68,6 +61,13 @@ body {
 /* Section 1: Landing */
 .landing-section {
     background: transparent;
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
 .landing-content {
@@ -120,11 +120,11 @@ body {
 /* Section 2: About */
 .about-section {
     background: transparent;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 2rem 0;
-    height: auto;
-    min-height: 100vh;
+    padding: 6rem 0;
+    min-height: auto;
 }
 
 .intro-content {
@@ -133,7 +133,7 @@ body {
     gap: 4rem;
     max-width: 1400px;
     width: 90%;
-    margin: 0 auto 3rem auto;
+    margin: 0 auto;
     align-items: center;
     position: relative;
     z-index: 3;
@@ -259,7 +259,7 @@ body {
     flex-wrap: wrap;
     max-width: 1400px;
     width: 90%;
-    margin: 0 auto;
+    margin: 6rem auto;
 }
 
 .contact-button {
@@ -297,9 +297,8 @@ body {
 /* Section 3: Gallery */
 .contact-section {
     background: transparent;
-    min-height: 100vh;
-    height: auto;
-    padding: 4rem 0;
+    padding: 6rem 0;
+    min-height: auto;
 }
 
 .gallery-content {
